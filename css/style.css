@@ -1,0 +1,236 @@
+body{
+    font: 15px/1.5 Arial, Helvetica , sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: ivory;
+}
+/*Global*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow:hidden
+}
+
+
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #35424a;
+    color:#fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a{
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+header li{
+    
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header span{
+    color: orangered;
+    font-weight: bold;
+}
+header h1{
+    float: left;
+    margin: 0 ;
+
+}
+
+.current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+nav{
+    float :right;
+    margin-top: 10px;
+}
+
+/* showcase */
+#showcase{
+    min-height: 400px;
+    background:url('../images/acme/img/showcase.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0px;
+
+}
+
+#showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    
+}
+#showcase p{
+    font-size:20px;
+}  
+
+#newsletter{
+    min-height: 80px;
+    padding:15px;
+    color: #fff;
+    background: #35424a;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float:right;
+    margin-top:15px;
+}
+#newsletter input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:250px;
+}
+
+.submit_1{
+    color: #fff;
+    background:orangered;
+    height: 35px;
+    width: auto;
+    border: 0;
+
+}
+#newsletter button:hover {
+    color:#35424a;
+}
+
+#boxes{
+    margin-top:20px;
+  }
+  
+  #boxes .box{
+    float:left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+  }
+  
+  #boxes .box img{
+    width:90px;
+  }
+
+  .about_us article{
+      
+      width: 60%;
+      float: left;
+      box-sizing: border-box;
+      margin: 0;
+  }
+  article h2{
+  text-align: center;
+  }
+ 
+  .about_us .sidebar{
+    background-color: #7e7e7e;
+    border: #d1cac8;
+    margin-top: 10px;
+    width: 30%;
+    float: right;
+    padding: 10px;
+}
+
+.sidebar h3{
+    text-align: center;
+}
+
+.clr{
+    clear: both;
+}
+#services h1{
+  text-align: center;
+  
+}
+
+.serve-box-1{
+    background-color: orangered;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius:10px ;
+    float:left;
+    box-sizing: border-box;
+    width : 45%;
+    
+}
+
+.serve-box-2{
+    background-color: #7e7e7e;
+    margin-top: 10px;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius:10px ;
+    float:right;
+    box-sizing: border-box;
+    width : 45%;
+    
+}
+.serve-box-3{
+    text-align: center;
+    background-color: #7e7e7e;
+    margin-top: 10px;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius:10px ;
+    float:left;
+    box-sizing: border-box;
+    width : 45%;
+}
+
+.serve-box-4{
+    background-color: orangered;
+    padding: 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border-radius:10px ;
+    float: right;
+    box-sizing: border-box;
+    width : 45%;
+}
+
+footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:#e8491d;
+    text-align: center;
+  }
+
+
+  @media(max-width:768px){
+      
+    header nav ,header h1,#newsletter h1,#newsletter form,#boxes .box , .about_us article ,.about_us .sidebar {
+          float: none;
+          width:100%;
+          text-align: center;
+      } 
+
+      #services .serve-box-1 ,#services .serve-box-2 , #services .serve-box-3 , #services .serve-box-4{
+        float: none;
+        width:100%;
+        text-align: center;
+      }
+  }
+
+
