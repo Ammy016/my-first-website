@@ -118,18 +118,81 @@ nav{
 
 #boxes{
     margin-top:20px;
+    
   }
   
-  #boxes .box{
+  
+
+
+  
+  #boxes .box-1{
     float:left;
     text-align: center;
     width:30%;
     padding:10px;
+    position: relative;
+    animation-name:animate-boxes-1 ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
   }
+
+  @keyframes animate-boxes-1{
+    0%{
+        left:-1000px;
+    }
+
+    100%{
+        left:0px;
+    }
+}
+
+#boxes .box-2{
+    float:left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+    position: relative;
+    animation-name:animate-boxes-2 ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes animate-boxes-2{
+    0%{
+        opacity:0
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+#boxes .box-3{
+    float:left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+    position: relative;
+    animation-name:animate-boxes-3 ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes animate-boxes-3{
+    0%{
+        right:-1000px;
+    }
+
+    100%{
+        right:0px;
+    }
+}
   
-  #boxes .box img{
+  #boxes .box-1 img,#boxes .box-2 img,#boxes .box-3 img{
     width:90px;
   }
+
+  
 
   .about_us article{
       
@@ -149,6 +212,28 @@ nav{
     width: 30%;
     float: right;
     padding: 10px;
+    position: relative;
+    animation-name:animate-sidebar ;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes animate-sidebar{
+    0%{
+        right:-1000px;
+        opacity:0;
+    }
+
+    /* 50%{
+        right:-100px;
+        opacity:0.7;
+    } */
+
+    100%{
+        right:0px;
+        opacity:1;
+    }
 }
 
 .sidebar h3{
